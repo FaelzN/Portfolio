@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #111;
+}
+
+
+section {
+    padding: 3rem  2rem;
+    margin: auto;
+    max-width: 1200px;
+}
+
+header{
+    background-color: #000;
+    border-bottom: solid #fff; /* Uma linha bem fina para o "brilho" */
+    box-shadow: 0px 0px 5px white; /* Adiciona uma sombra branca suave para o brilho */
+}
+
+header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5em;
+}
+
+header section .logo a{
+    background-color: transparent;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header section .logo span {
+    background-color: transparent;
+    background: linear-gradient(to right, gray, white);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header section .logo a{
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;color: white;
+    text-shadow: 0px 0px 10px white;
+}
+
+header section .logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+
+header section.controle nav a{
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    padding: 1em;
+    text-shadow: 0px 0px 10px white;
+    border-radius: 50px;
+}
+
+header section.controle nav a{
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    padding: 1em;
+    font-size: 18px;
+}
+
+header section.controle nav a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    padding: 0.2em 1em;
+    box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.6);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: 0.7s ease-in-out;
+}
+
+header section.controle button.contrate-me {
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    text-shadow: 0px 0px 10px white;
+    font-size: 18px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #111;
+    padding: 0.5em 1em;
+
+}
+
+header section.controle button.contrate-me:hover{
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #000;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    transition: 0.6s ease-in-out;
+    transition: 0.7s ease-in-out;
+}
+
+
+img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.08));
+    animation: image 4s ease-in-out infinite;
+}
+
+@keyframes image{
+    0% {
+        transform: translateY();
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY();
+    }
+}
+
+main  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60ch;
+
+}
+
+section main .texto h1 {
+    font-size: 53px;
+}
+
+section main h1 span{
+    color: transparent;
+    background: linear-gradient(to right, rgb(189, 189, 189), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px 1px #444;
+}
+
+section main h2{
+    font-size: 33px;
+    font-weight: 1000;
+}
+
+section main h2 span{
+    color: transparent;
+    background: linear-gradient(to right, rgb(189, 189, 189), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px 1px #444;
+    text-decoration: underline;
+}
+
+section main .paragraph-container p{
+    font-size: 20px;
+    margin-top: 1em;
+}
+
+
+section main .icons-container .icon a{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 0.2em 0.3em;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+section main .icons-container .icon a:last-child {
+    margin-right: 0;
+}
+
+
+section main .icon a:hover {
+    background-color: rgb(51, 46, 46);
+    color: #222;
+    transform: scale(1.1);
+    box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.6);
+}
+
+
+.paragraph-container {
+    margin-bottom: 40px;
+}
+
+.icons-container {
+    margin-bottom: 30px; 
+}
+
+main .buttons-container {
+    display: flex;
+    gap: 1em;
+}
+
+main .buttons-container button{
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttons-container button:hover {
+    background-color: white;
+    color: #222;
+    transform: scale(1.1);
+    border: 2px solid #000;
+    box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: 0.7s ease-in-out;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+    margin-top: em; /* Adiciona um espaço acima do footer */
+}
+
+.footer-content-simple {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #444;
+    margin: 0 10%; /* Adiciona margem nas laterais para centralizar o conteúdo */
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5em;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    border-radius: 1em;
+    padding: 0.2em 1em;
+    box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.6); /* Sombra laranja mais aparente */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1em;
+}
+
+.footer-social .icon-link {
+    border-color: #fff;
+    color: #fff;
+}
+
+.footer-social .icon-link:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: transparent;
+    color: #000;
+    border-radius: 1em;
+    padding: 0.2em 1em;
+    box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.6); /* Sombra laranja mais aparente */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.footer-bottom-simple {
+    padding-top: 1em;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Estilos para telas menores (celulares) */
+@media (max-width: 767px) {
+    header section {
+        flex-direction: column; /* Coloca os itens da header em coluna */
+        gap: 1em; /* Reduz o espaçamento entre os itens */
+        padding: 1.5rem 1rem; /* Reduz o padding interno */
+        text-align: center; /* Centraliza o texto dentro da header */
+    }
+
+    header section nav {
+        display: flex; /* Garante que os links fiquem em linha */
+        flex-direction: row; /* Coloca os links horizontalmente */
+        align-items: center; /* Centraliza verticalmente os links */
+        width: 100%; /* Ocupa toda a largura */
+        margin-bottom: 1em; /* Adiciona espaço abaixo da navegação */
+        justify-content: space-around; /* Distribui os links horizontalmente */
+    }
+
+    header section nav a {
+        padding: 0.8em 0; /* Remove padding vertical e mantém horizontal */
+        font-size: 16px; /* Reduz o tamanho da fonte dos links */
+        margin: 0 0.5em; /* Adiciona espaçamento horizontal entre os links */
+        width: auto; /* Ajusta a largura automaticamente */
+        text-align: center; /* Centraliza o texto dos links */
+    }
+
+    header section button.contrate-me {
+        font-size: 16px; /* Reduz o tamanho da fonte do botão */
+        padding: 0.5em 1.5em; /* Ajusta o padding do botão */
+    }
+
+    main {
+        flex-direction: column; /* Coloca o texto e a imagem em coluna */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto na seção principal */
+        height: auto; /* Ajusta a altura automaticamente */
+        padding-top: 2em; /* Adiciona um pouco de espaço no topo */
+    }
+
+    main .texto {
+        margin-bottom: 2em; /* Adiciona espaço entre o texto e a imagem */
+    }
+
+    section main .texto h1 {
+        font-size: 36px; /* Reduz o tamanho da fonte do título principal */
+    }
+
+    section main h2 {
+        font-size: 24px; /* Reduz o tamanho da fonte do subtítulo */
+    }
+
+    section main .paragraph-container p {
+        font-size: 16px; /* Reduz o tamanho da fonte do parágrafo */
+    }
+
+    img {
+        height: 200px; /* Reduz o tamanho da imagem */
+        width: 200px; /* Reduz o tamanho da imagem */
+    }
+
+    section main .icons-container .icon a {
+        width: 30px; /* Reduz o tamanho dos ícones */
+        height: 30px; /* Reduz o tamanho dos ícones */
+        font-size: 1.2em; /* Reduz o tamanho da fonte dos ícones */
+        margin-right: 5px; /* Reduz o espaçamento entre os ícones */
+    }
+
+    main .buttons-container {
+        flex-direction: column; /* Coloca os botões em coluna */
+        width: 80%; /* Ocupa uma largura maior */
+        margin: 1em auto; /* Centraliza os botões */
+        gap: 0.8em; /* Reduz o espaçamento entre os botões */
+    }
+
+    main .buttons-container button {
+        font-size: 14px; /* Reduz o tamanho da fonte dos botões */
+        padding: 0.8em 1.5em; /* Ajusta o padding dos botões */
+        width: 100%; /* Ocupa toda a largura do container */
+    }
+
+    .footer-content-simple {
+        flex-direction: row; /* Coloca os itens do footer horizontalmente */
+        justify-content: space-around; /* Distribui os itens horizontalmente */
+        align-items: center; /* Centraliza verticalmente os itens */
+        gap: 1em; /* Adiciona espaçamento entre os itens */
+        padding-bottom: 1.5em; /* Aumenta o padding inferior */
+        margin: 0 5%; /* Reduz a margem lateral */
+    }
+
+    .footer-links {
+        flex-direction: row; /* Coloca os links horizontalmente */
+        gap: 0.8em; /* Reduz o espaçamento entre os links */
+    }
+
+    .footer-links a {
+        font-size: 14px; /* Reduz o tamanho da fonte dos links */
+        padding: 0.5em 0.8em; /* Ajusta o padding dos links */
+        border-radius: 0.8em; /* Arredonda um pouco as bordas */
+    }
+
+    .footer-social {
+        flex-direction: row; /* Mantém os ícones em linha */
+        justify-content: center; /* Centraliza os ícones */
+        gap: 0.8em; /* Reduz o espaçamento entre os ícones */
+        margin-top: 0.5em; /* Adiciona um pouco de espaço acima dos ícones */
+    }
+
+    .footer-social .icon-link {
+        width: 30px; /* Reduz o tamanho dos ícones */
+        height: 30px; /* Reduz o tamanho dos ícones */
+        font-size: 1.2em; /* Reduz o tamanho da fonte dos ícones */
+        padding: 0.2em; /* Reduz o padding dos ícones */
+        border-radius: 50%; /* Mantém o formato circular */
+    }
+
+    .footer-bottom-simple {
+        padding-top: 1.5em; /* Aumenta o padding superior */
+        font-size: 0.8em; /* Reduz o tamanho da fonte do texto inferior */
+    }
+}
